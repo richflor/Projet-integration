@@ -1,27 +1,24 @@
 .header-top-container {
     display: flex;
+    justify-content: space-around;
 }
 
 .menu {
     display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 80px;
 }
 
 .stories-menu {
     display: flex;
+    list-style: none;
 }
 
 .container-notifications {
     display: none;
 }
 
-#toggle-show {
-    display: none;
-}
-
-.test_toggle {
-    visibility: visible;
-}
-
-#toggle:checked ~ * .test_toggle {
-    visibility: collapse;
+.recipes-global-container {
+    list-style: none;
 }
