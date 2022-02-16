@@ -5,10 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage Cook'Eat</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="settings"></div>
+        <div class="header-top-container">
+                <div class="settings"></div>
+                <div class="button-notifications">
+                    <ul class="container-notifications">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>                    
+        </div>
         <nav class="menu">
             <div class="button-home"></div>
             <div class="button-community"></div>
@@ -17,32 +30,21 @@
             <div class="button-profile"></div>
             <div class="container-phone-only-switch&add"></div>
         </nav>
-        <div class="notifications">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <div class="stories-menu">
-            <ul>
-                <li>
-                    <img src="" alt="">
-                </li> 
-                <li>
-                    <img src="" alt="">
-                </li> 
-                <li>
-                    <img src="" alt="">
-                </li> 
-                <li>
-                    <img src="" alt="">
-                </li>
-            </ul>
-        </div>
-        <form action="#">
+        <ul class="stories-menu">
+            <li>
+                <img src="" alt="">
+            </li> 
+            <li>
+                <img src="" alt="">
+            </li> 
+            <li>
+                <img src="" alt="">
+            </li> 
+            <li>
+                <img src="" alt="">
+            </li>
+        </ul>
+        <form class= "search-bar" action="#">
             <p>Je cherche</p>
             <input type="text" placeholder="Une recette, un ingrédient, #japonais">
             <button>
@@ -50,6 +52,11 @@
             </button>
         </form>
     </header>
+    <div class="test-burger">
+        <label for="toggle-show">☰</label>
+        <input id="toggle-show" type="checkbox">        
+        <div class="test_toggle">Hellow world</div>
+    </div> 
     <section class="recipes-section">
         <ul class="recipes-global-container">
             <li class="recipe-card-container">
