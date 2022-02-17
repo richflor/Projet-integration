@@ -5,12 +5,12 @@ header {
 
 .header-top-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: absolute;
     top: 85vh;
     width: 100%;
