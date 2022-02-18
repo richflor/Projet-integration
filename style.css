@@ -7,6 +7,7 @@ header {
     .header-top-container {
         display: flex;
         justify-content: space-between;
+        padding: 5%;
     }
 
     .menu {
@@ -14,7 +15,7 @@ header {
         justify-content: space-evenly;
         position: absolute;
         top: 85vh;
-        width: 100%;
+        width: 100vw;
         background: rgba(255, 255, 255, 0.21);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -24,12 +25,54 @@ header {
 
     .stories-menu {
         display: flex;
+        justify-content: space-evenly;
         list-style: none;
+        padding-left: 0;
     }
+
+        .stories-pictures {
+            height: 70px;
+            width: 70px;
+        }
+
+        .stories-add {
+            background-color: black;
+            height: inherit;
+            border-radius: 50%;
+        }
+
+        .stories-font {
+            font-size: 10px;
+        }
 
     .container-notifications {
         display: none;
     }
+
+    .search-bar {
+        border: solid 0.6px #519259;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 6vw;
+    }
+
+        .search-bar p {
+            font-size: 15px;
+            color: #519259;
+        }
+
+        .search-bar input {
+            font-size: 12px;
+            font-style: italic;
+            width: 60%;
+            border: none;
+        }
+
+        .search-bar button {
+            background-color: white;
+            border: none;
+        }
 
 .recipes-section {
     padding-inline: 10vw;
@@ -38,3 +81,37 @@ header {
         list-style: none;
         padding-left: 0;
     }
+
+        .recipe-profile-author-maj-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .recipe-profile-author-min-container {
+                display: flex;
+            }
+
+        .recipe-img-container {
+            width: 100%;
+            position: relative;
+            z-index: -1;
+        }
+
+            .recipe-img-container img {
+                width: inherit;
+                height: inherit;
+                object-fit: contain;
+                border-radius: 6px;
+            }
+
+            .recipe-time {
+                position: absolute;
+                top: 2%;
+                left: 2%;
+            }
+
+            .recipe-save {
+                position: absolute;
+                top: 2%;
+                right: 2%;
+            }
